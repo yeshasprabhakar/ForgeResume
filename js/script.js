@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $('#addEducation').click(function(){
+      ($("#educationForm").clone().insertBefore("#educationBtnRow"));
+    });
+    $('#addExperience').click(function(){
+      ($("#experienceForm").clone().insertBefore("#experienceBtnRow"));
+    });
+    $('#addProject').click(function(){
+      ($("#projectsForm").clone().insertBefore("#projectsBtnRow"));
+    });
+    $('#addAward').click(function(){
+      ($("#awardsForm").clone().insertBefore("#awardsBtnRow"));
+    });
+    $('#addCertification').click(function(){
+      ($("#certificationFrom").clone().insertBefore("#certificationBtnRow"));
+    });
+});

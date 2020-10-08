@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+.navbar-light{
+    background: #FFC700;
+}
+
+.navbar a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.jumbotron {
+    padding:50px 25px 50px 25px;
+    margin:0px auto;
+    background: #FFC700;
+    color: #000000;
+}
+
+.jumbotron p{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+body{
+    background-color: #C7B9FF;
+}
+
+footer {
+    background-color: #FFC700;
+    margin: 0px auto;
+    padding: 20px 0px; 
+}
+  

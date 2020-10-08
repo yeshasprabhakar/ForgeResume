@@ -10,30 +10,31 @@
 
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
 </head>
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top">
         <div class="container">
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#">Forge Resume</a> -->
+            <!-- <a class="navbar-brand mr-auto" href="#">Forge Resume</a> -->
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#home"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    <header class="jumbotron">
+    <header class="jumbotron" id="home">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row">
                     <div class="col text-center">
                         <h1>Forge Resume</h1>
                         <p>Create resume for free</p>
@@ -43,10 +44,350 @@
         </div>
     </header>
 
+<div class="container resume-body mt-4">
+    <div class="container mt-2" id="personal">
+        <div class="row">
+            <div class="col">
+                <h2>Personal</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-6 col-sm-6">
+                            <label for="inputFirstName">First Name</label>
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="John">
+                          </div>
+                        <div class="form-group col-6 col-sm-6">
+                            <label for="inputLastName">Last Name</label>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Doe">
+                          </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6 col-sm-6">
+                            <label for="inputPhone">Phone no</label>
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="Phone no">
+                          </div>
+                        <div class="form-group col-6 col-sm-6">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-4 col-sm-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Mysore">
+                      </div>
+                      <div class="form-group col-4 col-sm-4">
+                        <label for="inputState">State</label>
+                        <input type="text" class="form-control" id="inputState" placeholder="Karnataka">
+                      </div>
+                      <div class="form-group col-4 col-sm-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="123456">
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2" id="education">
+        <div class="row">
+            <div class="col">
+                <h2>Education</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="educationForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputInstitutionName">Institution Name</label>
+                            <input type="text" class="form-control" name="inputInstitutionName" id="inputInstitutionName" placeholder="PES College Of Engineering">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="inputFieldOfStudy">Field Of Study</label>
+                            <input type="text" class="form-control" name="inputFieldOfStudy" id="inputFieldOfStudy" placeholder="Electronics and Communication Engineering">
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputDegreeType">Type Of Degree</label>
+                            <input type="text" class="form-control" name="inputDegreeType" id="inputDegreeType" placeholder="Bachelor's Degree">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputGpa">GPA</label>
+                            <input type="text" class="form-control"name="inputGpa" id="inputGpa" placeholder="7.8 CGPA">
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputStartDate">Start Date</label>
+                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="dd/mm/yyyy">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputEndDate">End Date</label>
+                            <input type="date" class="form-control" name="inputEndDate" id="inputEndDate" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>        
+                </form>
+                <hr>
+            </div>
+        </div>
+
+
+        <div class="row" id="educationBtnRow">
+            <div class="col-sm-6 align-items-center">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addEducation">Add Another Education</a>
+            </div>
+        </div>
+        </div>
+    
+
+    <div class="container mt-2" id="workExperience">
+        <div class="row">
+            <div class="col">
+                <h2>Work Experience</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="experienceForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputCompanyName">Company Name</label>
+                            <input type="text" class="form-control" name="inputCompanyName" id="inputCompanyName" placeholder="XYZ Company">
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputPosition">Position</label>
+                            <input type="text" class="form-control" name="inputPosition" id="inputPosition" placeholder="Full Stack Engineer">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputWebsite">Website</label>
+                            <input type="text" class="form-control"name="inputWebsite" id="inputWebsite" placeholder="www.xyzcompany.com">
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputStartDate">Start Date</label>
+                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="dd/mm/yyyy">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputEndDate">End Date</label>
+                            <input type="date" class="form-control" name="inputEndDate" id="inputEndDate" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>        
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row" id="experienceBtnRow">
+            <div class="col-sm-6 align-items-center">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addExperience">Add Another Experience</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-2" id="projects">
+        <div class="row">
+            <div class="col">
+                <h2>Projects</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="projectsForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputProjectTitle">Project Title</label>
+                            <input type="text" class="form-control" name="inputProjectTitle" id="inputProjectTitle" placeholder="Air Quality Alert System">
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputWebsite">Website</label>
+                            <input type="text" class="form-control"name="inputWebsite" id="inputWebsite" placeholder="www.xyzprojectwebsite.com">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputStartDate">Date</label>
+                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>    
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row" id="projectsBtnRow">
+            <div class="col-sm-6 align-items-center">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addProject">Add Another Project</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-2" id="awards">
+        <div class="row">
+            <div class="col">
+                <h2>Awards</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="awardsForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputAwardTitle">Award Title</label>
+                            <input type="text" class="form-control" name="inputAwardTitle" id="inputAwardTitle" placeholder="React Hackathon">
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputAwarder">Awarder</label>
+                            <input type="text" class="form-control"name="inputAwarder" id="inputAwarder" placeholder="Google">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputStartDate">Date</label>
+                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>    
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row" id="awardsBtnRow">
+            <div class="col-sm-6 align-items-center">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addAward">Add Another Award</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-2" id="skills">
+        <div class="row">
+            <div class="col">
+                <h2>Skills</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="skillsForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputSkillName">Skill</label>
+                            <input type="text" class="form-control" name="inputSkillName" id="inputAwardTitle" placeholder="React JS">
+                        </div><div class="form-group col-6">
+                            <label for="inputSkillLevel">Level</label>
+                            <input type="text" class="form-control" name="inputSkillLevel" id="inputSkillLevel" placeholder="Intermediate">
+                        </div>
+                    </div>  
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row" id="awardsBtnRow">
+            <div class="col-sm-6 align-items-center">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addAward">Add Another Award</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2" id="certification">
+        <div class="row">
+            <div class="col">
+                <h2>Certifications</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="certificationFrom">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputCertificationTitle">Certification Title</label>
+                            <input type="text" class="form-control" name="inputCertificationTitle" id="inputCertificationTitle" placeholder="CCNP">
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputAwarder">Issuer</label>
+                            <input type="text" class="form-control"name="inputAwarder" id="inputAwarder" placeholder="Cisco Systems">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputStartDate">Date</label>
+                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>    
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row" id="certificationBtnRow">
+            <div class="col-sm-6 align-items-center">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addCertification">Add Another Certification</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <!-- Footer -->
+<footer class="page-footer mt-4" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="mb-2 text-center">
+            <!--Linkedin -->
+            <a>
+                <span class="fa fa-linkedin fa-lg"></span>
+            </a>
+            <!--Github-->
+            <a>
+                <span class="fa fa-github fa-lg"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">Made by
+      <a href="https://github.com/yeshasprabhakar"> Yeshas Prabhakar</a> with <span class="fa fa-heart fa-lg"></span>
+    </div>
+  </footer>
+
 
 </body>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </html>

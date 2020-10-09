@@ -12,6 +12,12 @@ $(document).ready(function(){
       ($("#awardsForm").clone().insertBefore("#awardsBtnRow"));
     });
     $('#addCertification').click(function(){
-      ($("#certificationFrom").clone().insertBefore("#certificationBtnRow"));
+      ($("#certificationForm").clone().insertBefore("#certificationBtnRow"));
+    });
+    $('#addHobby').click(function(){
+      ($("#hobbiesForm").clone().insertBefore("#hobbyBtnRow"));
+    });
+    $('#addLanguage').click(function(){
+      ($("#languagesForm").clone().insertBefore("#languageBtnRow"));
     });
 });

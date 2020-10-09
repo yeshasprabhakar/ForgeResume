@@ -24,9 +24,8 @@
             <!-- <a class="navbar-brand mr-auto" href="#">Forge Resume</a> -->
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#home"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item text-dark"><a class="nav-link" href="#home"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item text-dark"><a class="nav-link" href="#contact"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -45,6 +44,7 @@
     </header>
 
 <div class="container resume-body mt-4">
+
     <div class="container mt-2" id="personal">
         <div class="row">
             <div class="col">
@@ -98,6 +98,30 @@
         </div>
     </div>
 
+    <div class="container mt-2" id="objective">
+        <div class="row">
+            <div class="col">
+                <h2>Objective</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="objectiveForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="inputObjective">Summary</label>
+                            <textarea class="form-control" id="inputObjective" rows="3" placeholder="To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills."></textarea>
+                          </div>
+                    </div>      
+                </form>
+                <hr>
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-2" id="education">
         <div class="row">
             <div class="col">
@@ -146,8 +170,8 @@
         </div>
 
 
-        <div class="row" id="educationBtnRow">
-            <div class="col-sm-6 align-items-center">
+        <div class="row justify-content-center" id="educationBtnRow">
+            <div class="col-sm-3">
                 <a role="button" class="btn btn-block nav-link btn-warning" id="addEducation">Add Another Education</a>
             </div>
         </div>
@@ -197,8 +221,8 @@
             </div>
         </div>
 
-        <div class="row" id="experienceBtnRow">
-            <div class="col-sm-6 align-items-center">
+        <div class="row justify-content-center" id="experienceBtnRow">
+            <div class="col-sm-3">
                 <a role="button" class="btn btn-block nav-link btn-warning" id="addExperience">Add Another Experience</a>
             </div>
         </div>
@@ -238,8 +262,8 @@
             </div>
         </div>
 
-        <div class="row" id="projectsBtnRow">
-            <div class="col-sm-6 align-items-center">
+        <div class="row justify-content-center" id="projectsBtnRow">
+            <div class="col-sm-3">
                 <a role="button" class="btn btn-block nav-link btn-warning" id="addProject">Add Another Project</a>
             </div>
         </div>
@@ -278,8 +302,8 @@
             </div>
         </div>
 
-        <div class="row" id="awardsBtnRow">
-            <div class="col-sm-6 align-items-center">
+        <div class="row justify-content-center" id="awardsBtnRow">
+            <div class="col-sm-3">
                 <a role="button" class="btn btn-block nav-link btn-warning" id="addAward">Add Another Award</a>
             </div>
         </div>
@@ -311,8 +335,8 @@
             </div>
         </div>
 
-        <div class="row" id="awardsBtnRow">
-            <div class="col-sm-6 align-items-center">
+        <div class="row justify-content-center" id="awardsBtnRow">
+            <div class="col-sm-3">
                 <a role="button" class="btn btn-block nav-link btn-warning" id="addAward">Add Another Award</a>
             </div>
         </div>
@@ -327,7 +351,7 @@
 
         <hr>
 
-        <div class="row" id="certificationFrom">
+        <div class="row" id="certificationForm">
             <div class="col">
                 <form>
                     <div class="form-row">
@@ -351,9 +375,73 @@
             </div>
         </div>
 
-        <div class="row" id="certificationBtnRow">
-            <div class="col-sm-6 align-items-center">
+        <div class="row justify-content-center" id="certificationBtnRow">
+            <div class="col-sm-3">
                 <a role="button" class="btn btn-block nav-link btn-warning" id="addCertification">Add Another Certification</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-2" id="hobbies">
+        <div class="row">
+            <div class="col">
+                <h2>Hobbies</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="hobbiesForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputHobbyName">Hobby</label>
+                            <input type="text" class="form-control" name="inputHobbyName" id="inputHobbyName" placeholder="Hiking">
+                        </div>
+                    </div>      
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" id="hobbyBtnRow">
+            <div class="col-sm-3">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addHobby">Add Another Hobby</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-2" id="languages">
+        <div class="row">
+            <div class="col">
+                <h2>Languages</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" id="languagesForm">
+            <div class="col">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputLanguageName">Language</label>
+                            <input type="text" class="form-control" name="inputLanguageName" id="inputLanguageName" placeholder="Kannada">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputLanguageFluency">Fluency</label>
+                            <input type="text" class="form-control" name="inputLanguageFluency" id="inputLanguageFluency" placeholder="Native">
+                        </div>
+                    </div>       
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" id="languageBtnRow">
+            <div class="col-sm-3">
+                <a role="button" class="btn btn-block nav-link btn-warning" id="addLanguage">Add Another Language</a>
             </div>
         </div>
     </div>

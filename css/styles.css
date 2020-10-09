@@ -26,6 +26,16 @@ h1{
     font-size: 80px;
 }
 
+@media (max-width: 576px) { 
+    .jumbotron p{
+        font-size: 25px;
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+ }
+
 body{
     background-color: #C7B9FF;
 }

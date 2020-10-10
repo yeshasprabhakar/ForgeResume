@@ -11,7 +11,7 @@ html {
     font-weight: 600;
 }
 
-.jumbotron {
+#home {
     padding:50px 25px 50px 25px;
     margin:0px auto;
     background: #FFC700;
@@ -35,10 +35,17 @@ h1{
         font-size: 50px;
     }
  }
-
+ 
 body{
     background-color: #C7B9FF;
 }
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #A9A9A9;
+  }
 
 footer {
     background-color: #FFC700;

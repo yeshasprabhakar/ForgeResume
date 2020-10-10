@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js" integrity="sha512-pdCVFUWsxl1A4g0uV6fyJ3nrnTGeWnZN2Tl/56j45UvZ1OMdm9CIbctuIHj+yBIRTUUyv6I9+OivXj4i0LPEYA==" crossorigin="anonymous"></script>
     <!-- endbuild -->
 </head>
 <body>
@@ -43,57 +44,61 @@
         </div>
     </header>
 
-<div class="container resume-body mt-4">
+    <div id="resume-body">
 
-    <div class="container mt-2" id="personal">
+    <div class="container" id="personal">
         <div class="row">
             <div class="col">
                 <h2>Personal</h2>
             </div>
         </div>
+
         <hr>
+
         <div class="row">
-            <div class="col">
+            <div class="col-8">
                 <form>
                     <div class="form-row">
-                        <div class="form-group col-6 col-sm-6">
+                        <div class="form-group col-6">
                             <label for="inputFirstName">First Name</label>
                             <input type="text" class="form-control" id="inputFirstName" placeholder="John">
-                          </div>
-                        <div class="form-group col-6 col-sm-6">
+                        </div>
+                        <div class="form-group col-6">
                             <label for="inputLastName">Last Name</label>
                             <input type="text" class="form-control" id="inputLastName" placeholder="Doe">
-                          </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-6 col-sm-6">
+                        </div>
+                        <div class="form-group col-6">
                             <label for="inputPhone">Phone no</label>
                             <input type="tel" class="form-control" id="inputPhone" placeholder="Phone no">
-                          </div>
-                        <div class="form-group col-6 col-sm-6">
+                        </div>
+                        <div class="form-group col-6">
                             <label for="inputEmail">Email</label>
                             <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                         </div>
                     </div>
-                    <div class="form-group">
-                      <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-4 col-sm-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="Mysore">
-                      </div>
-                      <div class="form-group col-4 col-sm-4">
-                        <label for="inputState">State</label>
-                        <input type="text" class="form-control" id="inputState" placeholder="Karnataka">
-                      </div>
-                      <div class="form-group col-4 col-sm-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip" placeholder="123456">
-                      </div>
-                    </div>
                   </form>
+            </div>
+            <div class="col-4">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Mysore">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputState">State</label>
+                            <input type="text" class="form-control" id="inputState" placeholder="Karnataka">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip" placeholder="123456">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -117,7 +122,6 @@
                           </div>
                     </div>      
                 </form>
-                <hr>
             </div>
         </div>
     </div>
@@ -135,21 +139,21 @@
             <div class="col">
                 <form>
                     <div class="form-row">
-                        <div class="form-group col-sm-12">
+                        <div class="form-group col-12">
                             <label for="inputInstitutionName">Institution Name</label>
                             <input type="text" class="form-control" name="inputInstitutionName" id="inputInstitutionName" placeholder="PES College Of Engineering">
                         </div>
-                        <div class="form-group col-sm-12">
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-4">
                             <label for="inputFieldOfStudy">Field Of Study</label>
                             <input type="text" class="form-control" name="inputFieldOfStudy" id="inputFieldOfStudy" placeholder="Electronics and Communication Engineering">
                         </div>
-                    </div>    
-                    <div class="form-row">
-                        <div class="form-group col-6">
+                        <div class="form-group col-4">
                             <label for="inputDegreeType">Type Of Degree</label>
                             <input type="text" class="form-control" name="inputDegreeType" id="inputDegreeType" placeholder="Bachelor's Degree">
                         </div>
-                        <div class="form-group col-6">
+                        <div class="form-group col-4">
                             <label for="inputGpa">GPA</label>
                             <input type="text" class="form-control"name="inputGpa" id="inputGpa" placeholder="7.8 CGPA">
                         </div>
@@ -172,10 +176,11 @@
 
         <div class="row justify-content-center" id="educationBtnRow">
             <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addEducation">Add Another Education</a>
+                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addEducation">Add Another Education</a>
             </div>
         </div>
-        </div>
+
+    </div>
     
 
     <div class="container mt-2" id="workExperience">
@@ -223,18 +228,21 @@
 
         <div class="row justify-content-center" id="experienceBtnRow">
             <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addExperience">Add Another Experience</a>
+                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addExperience">Add Another Experience</a>
             </div>
         </div>
 
     </div>
 
-    <div class="container mt-2" id="projects">
+    <div class="container mt-2">
         <div class="row">
-            <div class="col">
-                <h2>Projects</h2>
-            </div>
-        </div>
+
+            <div class="col" id="projects">
+                <div class="row">
+                    <div class="col">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
 
         <hr>
 
@@ -263,18 +271,19 @@
         </div>
 
         <div class="row justify-content-center" id="projectsBtnRow">
-            <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addProject">Add Another Project</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container mt-2" id="awards">
-        <div class="row">
             <div class="col">
-                <h2>Awards</h2>
+                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addProject">Add Another Project</a>
             </div>
         </div>
+
+    </div>
+
+        <div class="col" id="awards">
+            <div class="row">
+                <div class="col">
+                    <h2>Awards</h2>
+                </div>
+            </div>
 
         <hr>
 
@@ -303,46 +312,19 @@
         </div>
 
         <div class="row justify-content-center" id="awardsBtnRow">
-            <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addAward">Add Another Award</a>
+            <div class="col">
+                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addAward">Add Another Award</a>
             </div>
         </div>
-    </div>
+        </div>
     
-    <div class="container mt-2" id="skills">
-        <div class="row">
-            <div class="col">
-                <h2>Skills</h2>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row" id="skillsForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <label for="inputSkillName">Skill</label>
-                            <input type="text" class="form-control" name="inputSkillName" id="inputAwardTitle" placeholder="React JS">
-                        </div><div class="form-group col-6">
-                            <label for="inputSkillLevel">Level</label>
-                            <input type="text" class="form-control" name="inputSkillLevel" id="inputSkillLevel" placeholder="Intermediate">
-                        </div>
-                    </div>  
-                </form>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row justify-content-center" id="awardsBtnRow">
-            <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addAward">Add Another Award</a>
-            </div>
         </div>
     </div>
 
-    <div class="container mt-2" id="certification">
+    <div class="container mt-2">
+        <div class="row">
+
+        <div class="col" id="certifications">
         <div class="row">
             <div class="col">
                 <h2>Certifications</h2>
@@ -376,80 +358,133 @@
         </div>
 
         <div class="row justify-content-center" id="certificationBtnRow">
-            <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addCertification">Add Another Certification</a>
+            <div class="col">
+                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addCertification">Add Another Certification</a>
             </div>
+        </div>
+        </div>
+
+        <div class="col" id="skills">
+            <div class="row">
+                <div class="col">
+                    <h2>Skills</h2>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <div class="row" id="skillsForm">
+                <div class="col">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="inputSkillName">Skill</label>
+                                <input type="text" class="form-control" name="inputSkillName" id="inputAwardTitle" placeholder="React JS">
+                            </div><div class="form-group col-12">
+                                <label for="inputSkillLevel">Level</label>
+                                <input type="text" class="form-control" name="inputSkillLevel" id="inputSkillLevel" placeholder="Intermediate">
+                            </div>
+                        </div>  
+                    </form>
+                    <hr>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center" id="skillsBtnRow">
+                <div class="col">
+                    <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addSkill">Add Another Skill</a>
+                </div>
+            </div>
+    
+        </div>
+
         </div>
     </div>
     
-    <div class="container mt-2" id="hobbies">
+    <div class="container mt-2">
         <div class="row">
-            <div class="col">
-                <h2>Hobbies</h2>
-            </div>
-        </div>
 
-        <hr>
+            <div class="col-6" id="hobbies">
 
-        <div class="row" id="hobbiesForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-sm-12">
-                            <label for="inputHobbyName">Hobby</label>
-                            <input type="text" class="form-control" name="inputHobbyName" id="inputHobbyName" placeholder="Hiking">
-                        </div>
-                    </div>      
-                </form>
+                <div class="row">
+                    <div class="col">
+                        <h2>Hobbies</h2>
+                    </div>
+                </div>
+
                 <hr>
-            </div>
-        </div>
 
-        <div class="row justify-content-center" id="hobbyBtnRow">
+                <div class="row" id="hobbiesForm">
+                    <div class="col">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-12">
+                                    <label for="inputHobbyName">Hobby</label>
+                                    <input type="text" class="form-control" name="inputHobbyName" id="inputHobbyName" placeholder="Hiking">
+                             </div>
+                            </div>      
+                        </form>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="hobbyBtnRow">
+                    <div class="col">
+                        <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addHobby">Add Another Hobby</a>
+                    </div>
+            </div>
+
+            </div>
+
+            <div class="col-6" id="languages">
+
+                <div class="row">
+                    <div class="col">
+                        <h2>Languages</h2>
+                    </div>
+                </div>
+        
+                <hr>
+        
+                <div class="row" id="languagesForm">
+                    <div class="col">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="inputLanguageName">Language</label>
+                                    <input type="text" class="form-control" name="inputLanguageName" id="inputLanguageName" placeholder="Kannada">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="inputLanguageFluency">Fluency</label>
+                                    <input type="text" class="form-control" name="inputLanguageFluency" id="inputLanguageFluency" placeholder="Native">
+                                </div>
+                            </div>       
+                        </form>
+                        <hr>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-center" id="languageBtnRow">
+                    <div class="col">
+                        <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addLanguage">Add Another Language</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-4" id="printPdfForm">
+        <div class="row justify-content-center" id="printBtnRow">
             <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addHobby">Add Another Hobby</a>
+                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" onclick="generatePDF()" id="printPdf">Generate PDF</a>
             </div>
         </div>
     </div>
-    
-    <div class="container mt-2" id="languages">
-        <div class="row">
-            <div class="col">
-                <h2>Languages</h2>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row" id="languagesForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <label for="inputLanguageName">Language</label>
-                            <input type="text" class="form-control" name="inputLanguageName" id="inputLanguageName" placeholder="Kannada">
-                        </div>
-                        <div class="form-group col-6">
-                            <label for="inputLanguageFluency">Fluency</label>
-                            <input type="text" class="form-control" name="inputLanguageFluency" id="inputLanguageFluency" placeholder="Native">
-                        </div>
-                    </div>       
-                </form>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row justify-content-center" id="languageBtnRow">
-            <div class="col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" id="addLanguage">Add Another Language</a>
-            </div>
-        </div>
     </div>
-
-</div>
 
     <!-- Footer -->
-<footer class="page-footer mt-4" id="contact">
+<footer class="page-footer mt-4" data-html2canvas-ignore="true" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -470,8 +505,6 @@
       <a href="https://github.com/yeshasprabhakar"> Yeshas Prabhakar</a> with <span class="fa fa-heart fa-lg"></span>
     </div>
   </footer>
-
-
 </body>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

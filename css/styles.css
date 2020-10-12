@@ -1,16 +1,20 @@
+/* Enables smooth scrolling */
 html {
     scroll-behavior: smooth;
   }
-  
+
+/* Set custom backgrround color for navbar */
 .navbar-light{
     background: #FFC700;
 }
 
+/* Set custom font size and weight */
 .navbar a{
     font-size: 20px;
     font-weight: 600;
 }
 
+/* Custom properties for home page jumbotron */
 #home {
     padding:50px 25px 50px 25px;
     margin:0px auto;
@@ -18,6 +22,7 @@ html {
     color: #000000;
 }
 
+/* Set custom font size for jumbotron elements */
 .jumbotron p{
     font-size: 25px;
 }
@@ -26,6 +31,7 @@ h1{
     font-size: 80px;
 }
 
+/* Resize font size of the jumbotron elements on mobile devices*/
 @media (max-width: 576px) { 
     .jumbotron p{
         font-size: 25px;
@@ -35,21 +41,26 @@ h1{
         font-size: 50px;
     }
  }
- 
+
+/* Set background color for body */
 body{
     background-color: #C7B9FF;
 }
 
+/* Custom properties for horizontal ruler */
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid #A9A9A9;
   }
+/* Set custom width and height for Card */
 .card{
     width: 200px;
     height: 225px;
 }
+
+/* Custom properties for footer design */
 footer {
     color: black;
     background-color: #FFC700;
@@ -62,10 +73,12 @@ footer a{
     text-decoration: none;
 }
 
+/* Set custom top margin for resume-body container */
 #resume-body{
     margin-top: 0.5in;
 }
 
+/* Remove border for all input elements */
 .form-control{
     border: 0;
 }

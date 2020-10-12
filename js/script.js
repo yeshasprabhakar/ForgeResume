@@ -14,6 +14,9 @@ $(document).ready(function(){
     $('#addCertification').click(function(){
       ($("#certificationForm").clone().insertBefore("#certificationBtnRow"));
     });
+    $('#addSkill').click(function(){
+      ($("#skillsForm").clone().insertBefore("#skillsBtnRow"));
+    });
     $('#addHobby').click(function(){
       ($("#hobbiesForm").clone().insertBefore("#hobbyBtnRow"));
     });
@@ -21,15 +24,16 @@ $(document).ready(function(){
       ($("#languagesForm").clone().insertBefore("#languageBtnRow"));
     });
     
+    // Event listener on printPdf button
     document.getElementById ("printPdf").addEventListener ("click", generatePDF);
     
+    // Function to generate PDF
     function generatePDF() {
       var opt = {
-        // margin: 1,
         pagesplit: true,
         enableLinks : true,
         isToggleStyle: true,
-        filename:     'myfile.pdf',
+        filename:     'myresume.pdf',
         image:        { type: 'jpeg', quality: 1 },
         html2canvas:  { scale: 2 },
       };

@@ -1,461 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>Forge Resume</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"
+      integrity="sha512-pdCVFUWsxl1A4g0uV6fyJ3nrnTGeWnZN2Tl/56j45UvZ1OMdm9CIbctuIHj+yBIRTUUyv6I9+OivXj4i0LPEYA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- endbuild -->
+  </head>
 
-  <title>Forge Resume</title>
-
- <!-- build:css css/main.css -->
- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
- <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
- <link rel="stylesheet" href="css/styles.css">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js" integrity="sha512-pdCVFUWsxl1A4g0uV6fyJ3nrnTGeWnZN2Tl/56j45UvZ1OMdm9CIbctuIHj+yBIRTUUyv6I9+OivXj4i0LPEYA==" crossorigin="anonymous"></script>
- <!-- endbuild -->
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- <a class="navbar-brand mr-auto" href="#">Forge Resume</a> -->
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item text-dark"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item text-dark"><a class="nav-link" href="#resume-body"><span class="fa fa-file fa-lg"></span> Resume</a></li>
-                    <li class="nav-item text-dark"><a class="nav-link" href="#contact"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a class="navbar-brand mr-auto" href="#">Forge Resume</a> -->
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="./index.html"
+                ><span class="fa fa-home fa-lg"></span> Home</a
+              >
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="#resume-body"
+                ><span class="fa fa-file fa-lg"></span> Resume</a
+              >
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="#contact"
+                ><span class="fa fa-address-card fa-lg"></span> Contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-<div class="container pt-2" id="resume-body">
-
-    <div class="container" id="personal">
+    <div class="container pt-2" id="resume-body">
+      <div class="container" id="personal">
         <div class="row">
-            <div class="col">
-                <h5>Personal</h5>
-            </div>
+          <div class="col">
+            <h5>Personal</h5>
+          </div>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="row">
-            <div class="col-6">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-12">  
-                            <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="tel" class="form-control" id="inputPhone" placeholder="Phone no">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                    </div>
-                  </form>
-            </div>
-            <div class="col-6">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-12">
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Address">
-                        </div>
-                        <div class="form-group col-4">
-                            <input type="text" class="form-control" id="inputCity" placeholder="City">
-                        </div>
-                        <div class="form-group col-4">
-                            <input type="text" class="form-control" id="inputState" placeholder="State">
-                        </div>
-                        <div class="form-group col-4">
-                            <input type="number" class="form-control" min="0" max="999999" id="inputZip" placeholder="Zipcode">
-                        </div>
-                    </div>
-                </form>
-            </div>
+          <div class="col-6">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputFirstName"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="inputPhone"
+                    placeholder="Phone no"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-6">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Address"
+                  />
+                </div>
+                <div class="form-group col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCity"
+                    placeholder="City"
+                  />
+                </div>
+                <div class="form-group col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputState"
+                    placeholder="State"
+                  />
+                </div>
+                <div class="form-group col-4">
+                  <input
+                    type="number"
+                    class="form-control"
+                    min="0"
+                    max="999999"
+                    id="inputZip"
+                    placeholder="Zipcode"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="container" id="objective">
+      <div class="container" id="objective">
         <div class="row">
-            <div class="col">
-                <h5>Objective</h5>
-            </div>
+          <div class="col">
+            <h5>Objective</h5>
+          </div>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="row" id="objectiveForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-12">
-                            <textarea class="form-control" id="inputObjective" rows="2" placeholder="To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills."></textarea>
-                          </div>
-                    </div>      
-                </form>
-            </div>
+          <div class="col">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <textarea
+                    class="form-control"
+                    id="inputObjective"
+                    rows="2"
+                    placeholder="To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills."
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="container" id="education">
+      <div class="container" id="education">
         <div class="row">
-            <div class="col">
-                <h5>Education</h5>
-            </div>
+          <div class="col">
+            <h5>Education</h5>
+          </div>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="row" id="educationForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control" name="inputInstitutionName" id="inputInstitutionName" placeholder="Institution Name">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control" name="inputFieldOfStudy" id="inputFieldOfStudy" placeholder="Field of branch">
-                        </div>
-                    </div>    
-                    <div class="form-row">
-                        <div class="form-group col-3">
-                            <input type="text" class="form-control" name="inputDegreeType" id="inputDegreeType" placeholder="Type of degree">
-                        </div>
-                        <div class="form-group col-3">
-                            <input type="text" class="form-control"name="inputGpa" id="inputGpa" placeholder="Grade">
-                        </div>
-                        <div class="form-group col-3">
-                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="Date">
-                        </div>
-                        <div class="form-group col-3">
-                            <input type="date" class="form-control" name="inputEndDate" id="inputEndDate" placeholder="Date">
-                        </div>
-                    </div>         
-                </form>
-            </div>
+          <div class="col">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="inputInstitutionName"
+                    id="inputInstitutionName"
+                    placeholder="Institution Name"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="inputFieldOfStudy"
+                    id="inputFieldOfStudy"
+                    placeholder="Field of branch"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="inputDegreeType"
+                    id="inputDegreeType"
+                    placeholder="Type of degree"
+                  />
+                </div>
+                <div class="form-group col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="inputGpa"
+                    id="inputGpa"
+                    placeholder="Grade"
+                  />
+                </div>
+                <div class="form-group col-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="inputStartDate"
+                    id="inputStartDate"
+                    placeholder="Date"
+                  />
+                </div>
+                <div class="form-group col-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="inputEndDate"
+                    id="inputEndDate"
+                    placeholder="Date"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-
 
         <div class="row justify-content-center" id="educationBtnRow">
-            <div class="col-12 col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addEducation">Add Another Education</a>
-            </div>
+          <div class="col-12 col-sm-3">
+            <a
+              role="button"
+              class="btn btn-block nav-link btn-warning"
+              data-html2canvas-ignore="true"
+              id="addEducation"
+              >Add Another Education</a
+            >
+          </div>
         </div>
+      </div>
 
-    </div>
-    
-
-    <div class="container" id="workExperience">
+      <div class="container" id="workExperience">
         <div class="row">
-            <div class="col">
-                <h5>Work Experience</h5>
-            </div>
+          <div class="col">
+            <h5>Work Experience</h5>
+          </div>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="row" id="experienceForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control" name="inputCompanyName" id="inputCompanyName" placeholder="Company Name">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control" name="inputPosition" id="inputPosition" placeholder="Position">
-                        </div>
-                    </div>               
-                </form>
-            </div>
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="Date">
-                        </div>
-                        <div class="form-group col-6">                        
-                            <input type="date" class="form-control" name="inputEndDate" id="inputEndDate" placeholder="Date">
-                        </div>
-                    </div>
-                </form>
-            </div>
-            
+          <div class="col">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="inputCompanyName"
+                    id="inputCompanyName"
+                    placeholder="Company Name"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="inputPosition"
+                    id="inputPosition"
+                    placeholder="Position"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="inputStartDate"
+                    id="inputStartDate"
+                    placeholder="Date"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <input
+                    type="date"
+                    class="form-control"
+                    name="inputEndDate"
+                    id="inputEndDate"
+                    placeholder="Date"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
 
         <div class="row justify-content-center" id="experienceBtnRow">
-            <div class="col-12 col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addExperience">Add Another Experience</a>
-            </div>
+          <div class="col-12 col-sm-3">
+            <a
+              role="button"
+              class="btn btn-block nav-link btn-warning"
+              data-html2canvas-ignore="true"
+              id="addExperience"
+              >Add Another Experience</a
+            >
+          </div>
         </div>
+      </div>
 
-    </div>
-
-    <div class="container">
+      <div class="container">
         <div class="row">
-
-            <div class="col" id="projects">
-                <div class="row">
-                    <div class="col">
-                        <h5>Projects</h5>
-                    </div>
-                </div>
-
-        <hr>
-
-        <div class="row" id="projectsForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-sm-12">
-                            <input type="text" class="form-control" name="inputProjectTitle" id="inputProjectTitle" placeholder="Project Title">
-                        </div>
-                    </div>    
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control"name="inputWebsite" id="inputWebsite" placeholder="Project Source">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="Date">
-                        </div>
-                    </div>    
-                </form>
-            </div>
-        </div>
-
-        <div class="row justify-content-center" id="projectsBtnRow">
-            <div class="col-12 col-sm-6">
-                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addProject">Add Another Project</a>
-            </div>
-        </div>
-
-    </div>
-
-        <div class="col" id="awards">
+          <div class="col" id="projects">
             <div class="row">
-                <div class="col">
-                    <h5>Awards</h5>
-                </div>
+              <div class="col">
+                <h5>Projects</h5>
+              </div>
             </div>
 
-        <hr>
+            <hr />
 
-        <div class="row" id="awardsForm">
-            <div class="col">
+            <div class="row" id="projectsForm">
+              <div class="col">
                 <form>
-                    <div class="form-row">
-                        <div class="form-group col-sm-12">
-                            <input type="text" class="form-control" name="inputAwardTitle" id="inputAwardTitle" placeholder="Award Title">
-                        </div>
-                    </div>    
-                    <div class="form-row">
-                        <div class="form-group col-6">
-                            <input type="text" class="form-control"name="inputAwarder" id="inputAwarder" placeholder="Awarder">
-                        </div>
-                        <div class="form-group col-6">
-                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="Date">
-                        </div>
-                    </div>    
+                  <div class="form-row">
+                    <div class="form-group col-sm-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputProjectTitle"
+                        id="inputProjectTitle"
+                        placeholder="Project Title"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputWebsite"
+                        id="inputWebsite"
+                        placeholder="Project Source"
+                      />
+                    </div>
+                    <div class="form-group col-6">
+                      <input
+                        type="date"
+                        class="form-control"
+                        name="inputStartDate"
+                        id="inputStartDate"
+                        placeholder="Date"
+                      />
+                    </div>
+                  </div>
                 </form>
+              </div>
             </div>
-        </div>
 
-        <div class="row justify-content-center" id="awardsBtnRow">
-            <div class="col-12 col-sm-6">
-                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addAward">Add Another Award</a>
+            <div class="row justify-content-center" id="projectsBtnRow">
+              <div class="col-12 col-sm-6">
+                <a
+                  role="button"
+                  class="btn btn-block nav-link btn-warning"
+                  data-html2canvas-ignore="true"
+                  id="addProject"
+                  >Add Another Project</a
+                >
+              </div>
             </div>
-        </div>
-        </div>
-    
-        </div>
-    </div>
+          </div>
 
-    <div class="container">
-        <div class="row">
-
-        <div class="col" id="certifications">
-        <div class="row">
-            <div class="col">
-                <h5>Certifications</h5>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row" id="certificationForm">
-            <div class="col">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-4">
-                            <input type="text" class="form-control" name="inputCertificationTitle" id="inputCertificationTitle" placeholder="Name">
-                        </div>
-                        <div class="form-group col-4">
-                            <input type="text" class="form-control"name="inputAwarder" id="inputAwarder" placeholder="Issuer">
-                        </div>
-                        <div class="form-group col-4">
-                            <input type="date" class="form-control" name="inputStartDate" id="inputStartDate" placeholder="Date">
-                        </div>
-                    </div>     
-                </form>
-            </div>
-        </div>
-
-        <div class="row justify-content-center" id="certificationBtnRow">
-            <div class="col-12 col-sm-6">
-                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addCertification">Add Another Certification</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="col" id="skills">
+          <div class="col" id="awards">
             <div class="row">
-                <div class="col">
-                    <h5>Skills</h5>
-                </div>
+              <div class="col">
+                <h5>Awards</h5>
+              </div>
             </div>
-    
-            <hr>
-    
-            <div class="row" id="skillsForm">
-                <div class="col">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-6">
-                                <input type="text" class="form-control" name="inputSkillName" id="inputAwardTitle" placeholder="Skill Name">
-                            </div><div class="form-group col-6">
-                                <input type="text" class="form-control" name="inputSkillLevel" id="inputSkillLevel" placeholder="Skill Level">
-                            </div>
-                        </div>  
-                    </form>
-                </div>
-            </div>
-    
-            <div class="row justify-content-center" id="skillsBtnRow">
-                <div class="col-12 col-sm-6">
-                    <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addSkill">Add Another Skill</a>
-                </div>
-            </div>
-    
-        </div>
 
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="row">
+            <hr />
 
-            <div class="col-6" id="hobbies">
-
-                <div class="row">
-                    <div class="col">
-                        <h5>Hobbies</h5>
+            <div class="row" id="awardsForm">
+              <div class="col">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-sm-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputAwardTitle"
+                        id="inputAwardTitle"
+                        placeholder="Award Title"
+                      />
                     </div>
-                </div>
-
-                <hr>
-
-                <div class="row" id="hobbiesForm">
-                    <div class="col">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-sm-12">
-                                    <input type="text" class="form-control" name="inputHobbyName" id="inputHobbyName" placeholder="Hobby Name">
-                             </div>
-                            </div>      
-                        </form>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputAwarder"
+                        id="inputAwarder"
+                        placeholder="Awarder"
+                      />
                     </div>
-                </div>
-
-                <div class="row justify-content-center" id="hobbyBtnRow">
-                    <div class="col-12 col-sm-6">
-                        <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addHobby">Add Another Hobby</a>
+                    <div class="form-group col-6">
+                      <input
+                        type="date"
+                        class="form-control"
+                        name="inputStartDate"
+                        id="inputStartDate"
+                        placeholder="Date"
+                      />
                     </div>
+                  </div>
+                </form>
+              </div>
             </div>
 
-            </div>
-
-            <div class="col-6" id="languages">
-
-                <div class="row">
-                    <div class="col">
-                        <h5>Languages</h5>
-                    </div>
-                </div>
-        
-                <hr>
-        
-                <div class="row" id="languagesForm">
-                    <div class="col">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-6">
-                                    <input type="text" class="form-control" name="inputLanguageName" id="inputLanguageName" placeholder="Language">
-                                </div>
-                                <div class="form-group col-6">
-                                    <input type="text" class="form-control" name="inputLanguageFluency" id="inputLanguageFluency" placeholder="Native">
-                                </div>
-                            </div>       
-                        </form>
-                    </div>
-                </div>
-        
-                <div class="row justify-content-center" id="languageBtnRow">
-                    <div class="col-12 col-sm-6">
-                        <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="addLanguage">Add Another Language</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container mt-4" id="printPdfForm">
-        <div class="row justify-content-center" id="printBtnRow">
-            <div class="col-6 col-sm-3">
-                <a role="button" class="btn btn-block nav-link btn-warning" data-html2canvas-ignore="true" id="printPdf">Generate PDF</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-    <!-- Footer -->
-    <footer class="page-footer mt-4" data-html2canvas-ignore="true" id="contact">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <h2>Let's Connect</h2>
-                </div>
-            </div>
-          <div class="row pt-2">
-            <div class="col-sm-12">
-              <div class="mb-2 text-center">
-                <!--Linkedin -->
-                <a href="https://www.linkedin.com/in/yeshas-prabhakar/" target="_blank">
-                  <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <!--Github-->
-                <a href="https://github.com/yeshasprabhakar" target="_blank">
-                  <i class="fab fa-github fa-2x"></i>
-                </a>
+            <div class="row justify-content-center" id="awardsBtnRow">
+              <div class="col-12 col-sm-6">
+                <a
+                  role="button"
+                  class="btn btn-block nav-link btn-warning"
+                  data-html2canvas-ignore="true"
+                  id="addAward"
+                  >Add Another Award</a
+                >
               </div>
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center">Made by Yeshas Prabhakar with <span class="fa fa-heart fa-lg"></span></div>
-    </footer>
+      </div>
 
-</body>
- <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
- <script src="js/script.js"></script>
+      <div class="container">
+        <div class="row">
+          <div class="col" id="certifications">
+            <div class="row">
+              <div class="col">
+                <h5>Certifications</h5>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="certificationForm">
+              <div class="col">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputCertificationTitle"
+                        id="inputCertificationTitle"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="form-group col-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputAwarder"
+                        id="inputAwarder"
+                        placeholder="Issuer"
+                      />
+                    </div>
+                    <div class="form-group col-4">
+                      <input
+                        type="date"
+                        class="form-control"
+                        name="inputStartDate"
+                        id="inputStartDate"
+                        placeholder="Date"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row justify-content-center" id="certificationBtnRow">
+              <div class="col-12 col-sm-6">
+                <a
+                  role="button"
+                  class="btn btn-block nav-link btn-warning"
+                  data-html2canvas-ignore="true"
+                  id="addCertification"
+                  >Add Another Certification</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col" id="skills">
+            <div class="row">
+              <div class="col">
+                <h5>Skills</h5>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="skillsForm">
+              <div class="col">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputSkillName"
+                        id="inputAwardTitle"
+                        placeholder="Skill Name"
+                      />
+                    </div>
+                    <div class="form-group col-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputSkillLevel"
+                        id="inputSkillLevel"
+                        placeholder="Skill Level"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row justify-content-center" id="skillsBtnRow">
+              <div class="col-12 col-sm-6">
+                <a
+                  role="button"
+                  class="btn btn-block nav-link btn-warning"
+                  data-html2canvas-ignore="true"
+                  id="addSkill"
+                  >Add Another Skill</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6" id="hobbies">
+            <div class="row">
+              <div class="col">
+                <h5>Hobbies</h5>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="hobbiesForm">
+              <div class="col">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-sm-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputHobbyName"
+                        id="inputHobbyName"
+                        placeholder="Hobby Name"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row justify-content-center" id="hobbyBtnRow">
+              <div class="col-12 col-sm-6">
+                <a
+                  role="button"
+                  class="btn btn-block nav-link btn-warning"
+                  data-html2canvas-ignore="true"
+                  id="addHobby"
+                  >Add Another Hobby</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6" id="languages">
+            <div class="row">
+              <div class="col">
+                <h5>Languages</h5>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row" id="languagesForm">
+              <div class="col">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputLanguageName"
+                        id="inputLanguageName"
+                        placeholder="Language"
+                      />
+                    </div>
+                    <div class="form-group col-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="inputLanguageFluency"
+                        id="inputLanguageFluency"
+                        placeholder="Native"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row justify-content-center" id="languageBtnRow">
+              <div class="col-12 col-sm-6">
+                <a
+                  role="button"
+                  class="btn btn-block nav-link btn-warning"
+                  data-html2canvas-ignore="true"
+                  id="addLanguage"
+                  >Add Another Language</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4" id="printPdfForm">
+        <div class="row justify-content-center" id="printBtnRow">
+          <div class="col-6 col-sm-3">
+            <a
+              role="button"
+              class="btn btn-block nav-link btn-warning"
+              data-html2canvas-ignore="true"
+              id="printPdf"
+              >Generate PDF</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="page-footer mt-4"
+      data-html2canvas-ignore="true"
+      id="contact"
+    >
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <h2>Let's Connect</h2>
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-sm-12">
+            <div class="mb-2 text-center">
+              <!--Linkedin -->
+              <a
+                href="https://www.linkedin.com/in/yeshas-prabhakar/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <!--Github-->
+              <a href="https://github.com/yeshasprabhakar" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center">
+        Made by Yeshas Prabhakar with <span class="fa fa-heart fa-lg"></span>
+      </div>
+    </footer>
+  </body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </html>

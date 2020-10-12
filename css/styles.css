@@ -51,6 +51,7 @@ hr {
     height: 225px;
 }
 footer {
+    color: black;
     background-color: #FFC700;
     margin: 0px auto;
     padding: 20px 0px; 
@@ -64,6 +65,7 @@ footer a{
 #resume-body{
     margin-top: 0.5in;
 }
+
 .form-control{
     border: 0;
 }

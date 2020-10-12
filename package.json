@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/yeshasprabhakar/ForgeResume#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.2",
-    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "lite-server": "^2.5.4",
     "popper.js": "^1.16.1"

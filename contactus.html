@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ristorante Con Fusion: About Us</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js" integrity="sha512-pdCVFUWsxl1A4g0uV6fyJ3nrnTGeWnZN2Tl/56j45UvZ1OMdm9CIbctuIHj+yBIRTUUyv6I9+OivXj4i0LPEYA==" crossorigin="anonymous"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <a class="navbar-brand mr-auto" href="#">Forge Resume</a> -->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item text-dark"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item text-dark"><a class="nav-link" href="./resume.html"><span class="fa fa-file fa-lg"></span> Resume</a></li>
+                    <li class="nav-item text-dark"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron" id="home">
+        <div class="container">
+            <div class="row">
+                    <div class="col text-center">
+                        <h1>Forge Resume</h1>
+                        <p>Create resume for free</p>
+                    </div>
+                    <hr>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">Contact Us</li>
+            </ol>
+            <div class="col-12">
+               <h3>Contact Us</h3>
+               <hr>
+               <p class="w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly, I will get back to you soon.</p>
+            </div>
+        </div>
+
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Send us your Feedback</h3>
+           </div>
+            <div class="col-12 col-md-9">
+                <form action="" method="post" enctype="text/plain">
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">Name</label>    
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="emailid" class="col-md-2 col-form-label">Email</label>    
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>    
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback"  maxlength="6000" name="feedback" rows="12" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary" id="sendFeedback">Send Feedback</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+             <div class="col-12 col-md">
+            </div>
+       </div>
+
+    </div>
+
+    <footer class="page-footer mt-4" data-html2canvas-ignore="true" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="mb-2 text-center">
+                <!--Linkedin -->
+                <a href="https://www.linkedin.com/in/yeshas-prabhakar/" target="_blank">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <!--Github-->
+                <a href="https://github.com/yeshasprabhakar" target="_blank">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright text-center">Made by Yeshas Prabhakar with <span class="fa fa-heart fa-lg"></span></div>
+      </footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -46,10 +46,25 @@ hr {
     border: 0;
     border-top: 1px solid #A9A9A9;
   }
-
+.card{
+    width: 200px;
+    height: 225px;
+}
 footer {
     background-color: #FFC700;
     margin: 0px auto;
     padding: 20px 0px; 
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+#resume-body{
+    margin-top: 0.5in;
+}
+.form-control{
+    border: 0;
 }
   
